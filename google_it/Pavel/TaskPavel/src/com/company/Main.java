@@ -15,19 +15,22 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class Main {
-
+    public static void populate(HashMap<Integer, String> map){
+        // perechi cheie-valoare
+        String mesaj = "";
+        for(int i = 0;i<10000;i++) {
+            mesaj = "salut" + String.valueOf(i);
+            map.put(i, mesaj);
+        }
+    }
         public static void main(String[] args)
         {
             final String outputFilePath1 = "key.txt";
             final String outputFilePath2 = "value.txt";
-            // crearea HashMapului
-            HashMap<String, Integer> map = new HashMap<>();
+            // crearea HashMapului si popularea acestuia
+            HashMap<Integer, String> map = new HashMap<>();
+            populate(map);
 
-            // perechi cheie-valoare
-            map.put("a", 1);
-            map.put("b", 2);
-            map.put("c", 3);
-            map.put("d", 4);
             // crearea fisierelor obiect
             File file1 = new File(outputFilePath1);
             File file2 = new File(outputFilePath2);
@@ -38,31 +41,33 @@ public class Main {
                 // Creare BufferedWriter pentru fisierele de Output
                 bf1 = new BufferedWriter(new FileWriter(file1));
                 bf2 = new BufferedWriter(new FileWriter(file2));
-                // Iterarea mapului
-                for (String i : map.keySet()) {
-                    bf1.write(i);
-                    bf1.newLine();
-                }
-                for (Integer i : map.values()) {
-                    bf2.write("" + i);
-                    bf2.newLine();
-                }
-                /*     Se poate decomenta partea asta unde am facut
-                       cealalta parcurgere cu Iterator
 
-                for (Map.Entry<String, Integer> entry :
+                // Iterarea mapului
+                long inceput = System.currentTimeMillis();
+//                for (Integer i : map.keySet()) {
+//                    bf1.write(i);
+//                    bf1.newLine();
+//                }
+//                for (String i : map.values()) {
+//                    bf2.write("" + i);
+//                    bf2.newLine();
+//                }
+
+                for (Map.Entry<Integer, String> entry :
                         map.entrySet()) {
 
-                    // put key and value separated by a colon
                     bf1.write(entry.getKey());
                     bf2.write(entry.getValue());
-                    // new line
+                    //new line
                     bf1.newLine();
                     bf2.newLine();
                 }
-                */
+
+                long sfarsit = System.currentTimeMillis();
+                System.out.println("Durata: " + (sfarsit - inceput) + " ms");
                 bf1.flush();
                 bf2.flush();
+
             }
             catch (IOException e) {
                 e.printStackTrace();

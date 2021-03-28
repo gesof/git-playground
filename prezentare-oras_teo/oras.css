@@ -1,0 +1,36 @@
+body{
+    background-color: darkred;
+}
+
+.row{
+    display: flex;
+    border-style: ridge;
+    border: rebeccapurple;
+}
+
+.column{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+img{
+    height: 190px;
+    width: 300px;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 5px ivory;
+    font-family: "Lucida Handwriting";
+    text-align: center;
+}
+
+p{
+    font-family: "Comic Sans MS";
+}
+
+section{
+    background-color: ivory;
+}

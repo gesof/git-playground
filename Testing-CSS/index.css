@@ -1,0 +1,27 @@
+h2{
+    font-size: 20px;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Arial;
+    font-weight:normal;
+    color:white;
+}
+
+
+#libertarians{
+    color:red;
+    margin-left:50px;
+    height:10px;
+}
+
+section{
+    background-color:red;
+}
+
+#text{
+    margin-left: 10px;
+    color:white;
+}

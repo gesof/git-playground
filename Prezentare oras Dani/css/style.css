@@ -1,0 +1,38 @@
+h1
+{
+    padding-top: 25px;
+    width:500px;
+    margin: AUTO;
+    text-align: center;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: rgba(230, 255, 255, 0.7);
+    display: inline-block;
+}
+body{
+    background-image: url('https://media3.giphy.com/media/JSjVUhKot7GfyP5cUZ/giphy.gif?cid=ecf05e473rksw6b11txnmmqjg4mnmv822ju8loio8c0tgwef&rid=giphy.gif');
+}
+.gallery img
+{
+    border-radius: 15px;
+    height: 300px;
+
+    float: left;
+}
+.gallery p
+{
+    font-size: 15px;
+
+
+}
+.gallery.l img
+{
+
+    float: right;
+
+}
+
+

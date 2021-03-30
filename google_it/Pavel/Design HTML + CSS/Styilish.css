@@ -1,0 +1,40 @@
+table, th, td {
+    border: 2px solid red;
+    border-spacing: 5px;
+}
+th{
+    padding: 100px;
+    text-align: left;
+    color: red;
+}
+td{
+    padding: 80px;
+    text-align: left;
+    color: darkred;
+}
+#t01 {
+    width: 100%;
+    background-color:red;
+}
+#t02 {
+    padding: 60px;
+    width: 50%;
+    background-color: hsl(0, 100%, 25%);
+    text-align: left;
+}
+#t03 {
+    padding: 60px;
+    width: 50%;
+    background-color: hsl(0, 100%, 25%);
+    text-align: left;
+
+}
+#t04 {
+    padding: 60px;
+    width: 50%;
+    background-color: hsl(0, 100%, 25%);
+    text-align: left;
+}
+h2{
+    color: red;
+}

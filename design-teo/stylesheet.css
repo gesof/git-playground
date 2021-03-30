@@ -1,0 +1,66 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: justify;
+    color: rosybrown;
+}
+
+h2{
+    font-size: 20px;
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+    font-family: Arial;
+    font-weight: normal;
+    color: white;
+}
+
+
+
+section{
+    display: block;
+    background-color: red;
+}
+
+.x{
+    display: flex;
+    flex-grow: inherit;
+    height: 500px;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+#text {
+    margin-left: 12%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+img{
+    float: right;
+    margin-right: 50%;
+}
+
+.color{
+    background-color: rgb(102, 26, 0);
+    height: 80%;
+    width: 33%;
+}
+
+.text{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#libert{
+    color: red;
+    margin-left: 60px;
+    height: 10px;
+}

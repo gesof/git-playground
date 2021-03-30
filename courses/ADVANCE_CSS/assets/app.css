@@ -1,0 +1,50 @@
+
+
+
+.btn-gesof {
+    background-color: var(--color-orange);
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+}
+
+
+.btn-gesof-animation:hover {
+    animation: slide-in 1s 1, pulse 2s infinite;
+}
+
+.animation-slide-in {
+    animation: slide-in 1s ease-in;
+}
+
+.animation-pulse:hover {
+    animation: pulse 2s infinite;
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .col-md-4 {
+        width: 33.33333%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}

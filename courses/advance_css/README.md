@@ -12,7 +12,7 @@ Advance CSS
 
 > clasele se denumesc cu liniuta si litere mici ex: `text-primary`, `container-fluid`, `container`, `card`, `btn`, `btn-danger`, `bg-primary`
 > diferenta dintre `btn` (prescurtare de la button) si `btn-danger`, clasa `btn` va contine stilurile generale ale unui buton precum: `line-height`, `font-size`, `border-radius`, pe cand `btn-danger` va altera numai `background` si `border-color`
-> aceasta separare se face deoarece imi doresc un button care sa arate la fel in toate paginile dar nu peste tot imi doresc aceiasi culoare, pentru butonul de delete doresc sa il evidentiez cu rosu.
+> aceasta separare se face deoarece imi doresc un button care sa arate la fel in toate paginile dar nu peste tot imi doresc aceiasi culoare, butonul de delete doresc sa il evidentiez cu rosu.
 
 > daca dorim sa realizam componente precum : `card`, `nav`, `list`, `modal`, `spinner`  denumirea acestora va fi primul nume al clasei urmat de derivare ex:  `card-product`, `list-categories`, `text-primary`, nu se va tine cont de sintaxa frazei (in engleza adjectivul este pus in fata substantivului). Nu tinem cont de sintaxa pentru ca aceste componente sunt folosite in mai multe sectiuni ale aplicatiei noastre si cand vrem sa refolosim componenta stim ca vrem de ex un card (nu stim toate derivatiile acestei clase) iar editorul ne va afisa toate optiunile disponibile sub cheia card.
 

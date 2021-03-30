@@ -1,0 +1,111 @@
+.top-nav
+{
+   text-align: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 8%;
+}
+
+.top-nav a:hover {
+    background: #ddd;
+    color: green ;
+}
+
+.top-nav a{
+    float: left;
+    display: block;
+    color: red;
+    margin-left: 45px;
+    text-align: center;
+    padding: 12px 13px;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+#one
+{
+    position: absolute;
+    top: 60px;
+    margin-left: 75px;
+    width: 80%;
+    height: 50%;
+    float:left;
+
+
+}
+ img
+{   position: absolute;
+    top: 30px;
+    height: 200px;
+    width: 200px;
+    left: 70%;
+    bottom: 100px;
+    float: right;
+
+}
+
+h5
+{
+    color: white;
+    text-align: left;
+    font-size: 30px;
+}
+h3
+{
+    color: white;
+    text-align: left;
+}
+p {
+    color:white;
+    float: left;
+    text-align: left;
+    margin-top: 1em;
+}
+body{
+    margin: 0;
+    background-color: red;
+}
+#leftbox {
+    position: absolute;
+    width:447px;
+    height:300px;
+    bottom: 0px;
+    left:0px;
+    background-color: maroon;
+
+}
+#middlebox{
+    position:absolute;
+    width:455px;
+    height:300px;
+    bottom:0px;
+    left: 50%;
+    margin-left: -228px;
+
+    background-color: maroon;
+}
+#rightbox{
+    position: absolute; /* Child should have absolute position */
+    width:447px;
+    height:300px;
+    bottom: 0px;
+    right: 0px;
+    background-color: maroon;
+}
+.text
+{
+
+    bottom: 35%;
+    top:15%;
+    left:45px;
+    width: 300px;
+
+    text-align: left;
+    position: relative;
+    text-align: center;
+
+}
+

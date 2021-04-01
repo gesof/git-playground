@@ -1,5 +1,37 @@
 body{
-    background-color: antiquewhite;
+    background-color: #790c5a;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #f3bad6;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: '\1F33A';
+    margin: 0px;
+}
+
+li a {
+    text-decoration: none;
+    margin: 0 .2em;
+    color: #440a67;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: rgb(255, 242, 230);
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
 }
 
 #floating-paragraph{

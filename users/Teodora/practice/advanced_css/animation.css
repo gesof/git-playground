@@ -8,6 +8,7 @@ body{
     background-color: #f3bad6;
     padding: 10px;
     justify-content: space-between;
+    border-radius: 20px;
 }
 
 ul {

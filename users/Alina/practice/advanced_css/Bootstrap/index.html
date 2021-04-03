@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libertarians</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="buton-logare">
+            <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+        </div>
+        <div class="header-text-container">
+            <div class="header-text">
+                <h1>Down with the state</h1>
+                <p>Abandon the left vs.paradigm and adopt new ideals,where
+                    consistency <br>and logic reign supreme.</p>
+            </div>
+            <img src="libertarians.png" alt="libertarians-logo" />
+        </div>
+    </header>
+    <main>
+        <div class="infos-container">
+            <h3>But what about the roads?</h3>
+            <p class="text">You just don't understand economics,like supply and demand
+                Don't worry kiddo,where there's a demand,there will be a supply
+                ;we'll have our roads.
+            </p>
+        </div>
+        <div class="infos-container middle">
+            <h3>Is taxation theft?</h3>
+            <p>If I came to your house with some heavily armed buddies,
+                demanded that you and your neighbors give me a percentageof you income
+                ,in return for some crappy monopolised services that you didn'
+                ask for,would you consider that theft?
+            </p>
+        </div>
+        <div class="infos-container">
+            <h3 class="text">So,what you're dsaying is...?</h3>
+            <p>Libertarians want to live in a word where gay couples can protect
+                their poppy fields with fully automated weapons.</br>
+                A word where voluntarism and property rights are treated
+                with the hoghest respect.
+            </p>
+        </div>
+    </main>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header my-modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> Log in </h4>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="usrname" class="user-label"> <span class="glyphicon glyphicon-user"></span>
+                                Username</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Introdu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw" class="user-label "><span class="glyphicon glyphicon-eye-open"></span>
+                                Parola</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Introdu parola">
+                        </div>
+                        <div class="butoane">
+                            <button type="submit" class="btn btn-danger btn-default pull-left"
+                                data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            <button type="submit" class="btn btn-success"><span
+                                    class="glyphicon glyphicon-off"></span> Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- m-am inspirat de aici: https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp -->

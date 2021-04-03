@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Css</title>
+</head>
+<body>
+    <div>
+        <img src="images/caine2.jpg" id="image" alt="caine1" style="visibility:hidden" />
+
+    </div>
+    <button id="button" onclick="imageShow();removeElement() " >Click me!</button>
+    <script>
+        function removeElement() {
+            document.getElementById("button").style.display = "none";
+        }
+         function imageShow(){
+         document.getElementById("image").style.visibility="visible";
+
+        }
+    </script>
+</body>
+</html>

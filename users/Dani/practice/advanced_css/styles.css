@@ -1,0 +1,65 @@
+body
+{
+
+    background : url("https://media3.giphy.com/media/3o6ozzNpgQVoDLpBHW/giphy.gif?cid=ecf05e475tl9i06cvlqm7spisymqvndd1kfiqixtv06z49hj&rid=giphy.gif");
+    background-size: 100%;
+}
+#image
+{
+    border-radius: 4px;
+    padding: 200px 100px;
+    width: 450px;
+    height: 330px;
+}
+button
+{
+    cursor: pointer;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 80px;
+    border: none;
+    color: black;
+    position: absolute;
+    right: 100px;
+    bottom: 300px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 120ms  infinite  ;
+}
+button:hover
+{
+    border:none;
+    background: linear-gradient(30deg, mediumvioletred,yellow,black );
+    animation: background-change  ;
+
+}
+button:hover:after
+{
+
+    visibility:hidden;
+}
+@keyframes background-change {
+    100%
+    {
+        background: linear-gradient(30deg,black,black);
+    }
+}
+@keyframes glowing {
+    0% {
+        background: linear-gradient(20deg, red ,green,blue, yellow);
+        background-blend-mode: multiply;
+        box-shadow: 0 0 34px black;
+    }
+    50% {
+        background: linear-gradient(20deg, red ,violet , yellow);
+        box-shadow: 0 0 24px black;
+    }
+    100% {
+        background: linear-gradient(20deg, red, yellow);
+        box-shadow: 0 0 100px black;
+    }
+}

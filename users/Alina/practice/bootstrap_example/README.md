@@ -1,0 +1,2 @@
+# bs-example
+Alina directory.

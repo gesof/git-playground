@@ -2,9 +2,10 @@ h1
 {
     padding-top: 25px;
     width:500px;
-    margin: AUTO;
+    margin: auto;
     text-align: center;
 }
+
 .gallery {
     margin: 5px;
     border: 1px solid #ccc;

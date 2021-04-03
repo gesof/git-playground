@@ -4,33 +4,31 @@ body{
 
 .row{
     display: flex;
-    border-style: ridge;
-    border: rebeccapurple;
 }
 
 .column{
     flex: 33.33%;
     padding: 5px;
-}
-
-img{
-    height: 190px;
-    width: 300px;
-    object-fit: cover;
-    margin-left: 50px;
-}
-
-h1{
-    color: white;
-    text-shadow: 2px 2px 5px ivory;
-    font-family: "Lucida Handwriting";
     text-align: center;
 }
 
-p{
-    font-family: "Comic Sans MS";
+.vienna{
+    height: 190px;
+    width: 300px;
+    object-fit: cover;
 }
 
-section{
+.title{
+    color: white;
+    text-shadow: 2px 2px 5px ivory;
+    font-family: "Lucida Handwriting", sans-serif;
+    text-align: center;
+}
+
+.city-information{
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.city{
     background-color: ivory;
 }

@@ -1,0 +1,59 @@
+.content-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+}
+
+.title-main{
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.text-main{
+    color: white;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.title-secondary{
+    color: white;
+    font-weight: normal;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+}
+
+.text{
+    color: rosybrown;
+    font-weight: normal;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+}
+
+section{
+    background-color: red;
+}
+
+.content-main{
+    display: flex;
+}
+
+.image-eagle{
+    width: 300px;
+    margin-left: 30%;
+}
+
+.content-mini{
+    background-color: rgb(102, 26, 0);
+    text-align: justify;
+    padding: 30px;
+}
+
+.libertarians{
+    color: red;
+    margin-left: 60px;
+    height: 10px;
+}

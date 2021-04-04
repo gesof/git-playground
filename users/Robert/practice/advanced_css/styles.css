@@ -10,41 +10,38 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-nav {
+.navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 1em;
   background-color: var(--navbar-bg-color);
 }
 
-ul {
+.menu-navbar {
   display: flex;
-  flex-direction: row;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+.item-menu {
   margin: auto;
 }
 
-li a {
+.item-menu a {
   text-decoration: none;
   color: #fff;
   font-weight: 400;
   margin: 0 .2em;
 }
 
-li a:hover {
+.item-menu a:hover {
   color: rgb(226, 226, 226);
   text-decoration: underline;
 }
 
 .search-bar {
   display: flex;
-  flex-direction: row;
 }
 
 .search-bar input {

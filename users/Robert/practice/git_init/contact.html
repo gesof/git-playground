@@ -15,18 +15,26 @@
             text-align: center;
         }
 
-        form {
+        .email-form {
             display: flex;
             flex-direction: column;
             margin: auto;
         }
 
-        input, textarea, button {
+        .email-input, .message-textarea, .send-mail-button {
             margin: .5em 0;
         }
 
-        button {
-
+        .label {
+            position: absolute; 
+            width: 1px; 
+            height: 1px; 
+            padding: 0; 
+            margin: -1px; 
+            overflow: hidden; 
+            clip: rect(0,0,0,0); 
+            white-space: nowrap; 
+            border: 0;
         }
     
     </style>
@@ -34,11 +42,13 @@
 <body>
 <div class="container">
     <h2>Contact Form</h2>
-    <form>
-        <input type="text" name="email" placeholder="name@email.com"/>
-        <textarea placeholder="your message here"></textarea>
+    <form class="email-form">
+        <label for="email" class="label">Email: </label>
+        <input id="email" class="email-input" type="text" name="email" placeholder="name@email.com"/>
+        <label for="message" class="label">Message: </label>
+        <textarea id="message" class="message-textarea" placeholder="your message here"></textarea>
         
-        <button>Submit</button>
+        <button class="send-mail-button">Submit</button>
     </form>
 </div>
 </body>

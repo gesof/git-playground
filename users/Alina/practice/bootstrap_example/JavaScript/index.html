@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript </title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        class Persoana {
+            constructor(nume, prenume, anulNasterii) {
+                this.nume = nume;
+                this.prenume = prenume;
+                this.anulNasterii = anulNasterii;
+            }
+
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.anulNasterii;
+            }
+        };
+
+        let persoana = new Persoana("Maria", "Ion", 2012);
+        document.getElementById("demo1").innerHTML = "Varsta este: " + persoana.age() + " ani";
+
+
+        class Angajat extends Persoana {
+            constructor(nume, prenume, anulNasterii, functie, salariu) {
+                super(nume, prenume, anulNasterii);
+                this.functie = functie;
+                this.salariu = salariu;
+            }
+        }
+
+        persoana = new Angajat("Mircea", "Ionescu", 1900, "primar", 200000);
+        document.getElementById("demo2").innerHTML = "Varsta este: " + persoana.age() + "ani";
+    </script>
+</body>
+
+</html>

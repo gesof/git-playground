@@ -43,3 +43,7 @@
 .width{
     min-width: 100%;
 }
+
+.container-cover{
+    max-width: 750px;
+}

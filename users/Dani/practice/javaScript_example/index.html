@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>JavaScript</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light ">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="logo" ></img>
+</nav>
+<script type="text/javascript">
+    class Person {
+        constructor(_name, _age) {
+            this.name = _name;
+            this.age = _age;
+        }
+
+        show() {
+            alert('I am ${this.name} and I am ${this.age} years old.');
+            console.log('I am ${this.name} and I am ${this.age} years old.');
+        }
+    }
+    class Programmer extends Person{
+        constructor(_name, _age,_programming_language ){
+                super(_name,_age);
+                this.programming_language= _programming_language;
+          }
+    }
+    let person1= new Person("Dani",20);
+    let person2= new Programmer("Andrei", 25, "C++");
+    console.log(person1);
+    console.log(person2);
+
+</script>
+</body>
+</html>

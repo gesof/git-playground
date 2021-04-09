@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing with regex</title>
+    <script>
+        function testRegex() {
+            let re1 = /ab+c/i; // literal notation
+            let re2 = new RegExp('ab+c', 'i') // constructor with string pattern as first argument
+            let re3 = new RegExp(/ab+c/, 'i') // constructor with regular expression literal as first argument
+
+            let str = "This is a test"; console.log(str);
+            let n = str.search(/test/i); console.log(n);
+            let res = str.replace(/t/ig, "a"); console.log(res);
+            let hasExpression = re1.test("My text is acc!"); console.log(hasExpression);
+            let matches = str.match(/.*(test)/); console.log(matches.length);console.log(matches[1]);
+        }
+
+        testRegex();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

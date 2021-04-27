@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>PHP forms version 2</title>
+</head>
+<body>
+<h1>PHP Forms</h1>
+<?php
+if(!empty($firstLastName)) echo "<h3>Hello $firstLastName</h3>";
+?>
+<form method="post" enctype="multipart/form-data">
+  <label>Nume</label>
+  <input type="text" name="firstlastname" />
+  <input type="file" name="fisier" />
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

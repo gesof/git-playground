@@ -1,0 +1,1 @@
+<p>Exemplu de continut receptionat prin crerere AJAX</p>
